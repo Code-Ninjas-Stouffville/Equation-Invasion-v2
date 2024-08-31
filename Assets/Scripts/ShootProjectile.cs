@@ -8,7 +8,8 @@ public class ShootProjectile : MonoBehaviour
 {
     public GameObject objectThrown;
     public Vector3 offset;
-    public int throwableCounter;
+    public int throwableCounter = 0;
+    public bool collected = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +19,26 @@ public class ShootProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (collected = true && throwableCounter > 0)
         {
-            offset = transform.localScale.x * new Vector3(1, 0, 0);
-            Vector3 throwablePosition = transform.position + offset;
-            Instantiate(objectThrown, throwablePosition, transform.rotation);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                offset = new Vector3(transform.localScale.x/Mathf.Abs(transform.localScale.x), 0, 0);
+                Vector3 throwablePosition = transform.position + offset;
+                Instantiate(objectThrown, throwablePosition, transform.rotation);
+                throwableCounter -= 1;
+            }
+        
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ProjectileFlower")
+        {
+            collected = true;
+            throwableCounter = 10;
+            Destroy(collision.gameObject);
         }
     }
 }
