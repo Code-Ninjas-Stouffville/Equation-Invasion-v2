@@ -7160,6 +7160,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1717408033920530009, guid: 4e38780e426e4574597ce595af748d13,
         type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1717408033920530009, guid: 4e38780e426e4574597ce595af748d13,
+        type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
