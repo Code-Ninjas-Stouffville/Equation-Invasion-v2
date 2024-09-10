@@ -17,6 +17,7 @@ TagManager:
   - Ground
   - Fireball
   - ProjectileFlower
+  - Lightning Bolt
   layers:
   - Default
   - TransparentFX

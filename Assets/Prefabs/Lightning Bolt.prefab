@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1594920747720773309}
   - component: {fileID: 3256469530403072871}
   - component: {fileID: 5329733794715550400}
+  - component: {fileID: 4829966139539984753}
   m_Layer: 0
   m_Name: Lightning Bolt
-  m_TagString: Untagged
+  m_TagString: Lightning Bolt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,3 +159,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.14243102}
   m_EdgeRadius: 0
+--- !u!114 &4829966139539984753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063518290495613818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f6dc2cb2b19cd48b5d34eeabcecda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 4581869216438082427, guid: 7ab09df716bcaab4b8bf7d20376347e8, type: 3}
