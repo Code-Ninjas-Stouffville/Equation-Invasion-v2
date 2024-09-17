@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-
+    public GameObject gemCheckerPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,5 +56,10 @@ public class GameOverScreen : MonoBehaviour
     public void MenuButton4()
     {
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void GemContinue()
+    {
+        gemCheckerPanel.SetActive(false);
     }
 }

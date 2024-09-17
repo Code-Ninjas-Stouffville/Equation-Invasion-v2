@@ -18,6 +18,9 @@ TagManager:
   - Fireball
   - ProjectileFlower
   - Lightning Bolt
+  - Red
+  - Blue
+  - Green
   layers:
   - Default
   - TransparentFX
